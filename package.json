@@ -1,0 +1,17 @@
+{
+  "name": "lab6",
+  "version": "1.0.0",
+  "description": "Large Data Processing with Streams and Async Iterators",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.0.0"
+  }
+}
