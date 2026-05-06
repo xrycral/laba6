@@ -52,6 +52,7 @@ function consumeStream(stream) {
   stream.on('error', (err) => {
     console.error(`\n[Stream] Error event caught: ${err.message}`);
     console.log(`Records received before error: ${count}`);
+    throw err;
   });
 }
 
