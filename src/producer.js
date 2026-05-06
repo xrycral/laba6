@@ -9,7 +9,7 @@ async function* dataProducer(totalRecords, chunkSize = 10) {
 
     for (let i = processed; i < end; i++) {
       if (i === 55) {
-        return;
+        throw new Error('Corrupt record at index ${i}');
       }
 
       chunk.push({ id: i, value: Math.random() * 1000 });
